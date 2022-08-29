@@ -1,0 +1,21 @@
+:root {
+    --magenta: rgb(168, 4, 168);
+    --slategrey: rgb(156, 146, 146);
+    --textSize: 18px;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: var(--slategrey);
+}
+
+.item {
+    background-color: var(--magenta);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--textSize);
+}
