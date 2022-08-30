@@ -1,6 +1,6 @@
 :root {
-    --magenta: rgb(168, 4, 168);
-    --slategrey: rgb(156, 146, 146);
+    --magenta: #6494AA;
+    --slategrey: #E9B872;
     --textSize: 18px;
 }
 
@@ -22,7 +22,40 @@ html {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 20px;
-    grid-template-rows: 40vh 40vh;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    grid-template-rows: repeat(7,12vh);
+}
+
+.item1 {
+    background-color: #90A959;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.item2 {
+    background-color: #A63D40;
+    color: #fff;
+    grid-row: span 3;
+}
+
+.item7 {
+    background-color: #90A959;
+    color: #fff;
+    grid-row: span 3;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .grid {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(7, 13vh);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .grid {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(7, 13vh);
+    }
 }
