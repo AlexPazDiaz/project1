@@ -16,7 +16,7 @@ html {
     align-items: center;
     border: 1px solid #fff;
     color: #fff;
-    font-family: cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: var(--textSize);
 }
 
